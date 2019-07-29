@@ -1,18 +1,37 @@
 import React, { Component } from "react";
 import "./App.css";
+import Item from './Components/item';
 
 export function makeTextWithMistakes(text, mistakes) {
-  // ...
-}
+  const paragraphs = text.split("\n");
+  const erros = Array(mistakes.length);
+  const certos = Array(mistakes.length);
+  const empty = '';
+  const unidos = [];
+  const final = [];
 
-class App extends Component {
-  renderParagraph = (paragraph, i) => {
-    return <p key={i}>{paragraph}</p>;
+  for(var x = 0; x < mistakes.length; x++){ //separando parte correta de parte errada
+      certos[x] = paragraphs[x].slice(0, mistakes[x].start - 1);
+      erros[x] = empty.concat(paragraphs[x].slice(mistakes[x].start, mistakes[x].end)) ;
+ 
+  }
+
+  for(x = 0; x < mistakes.length; x++){
+    unidos[x] = empty.concat(certos[x],' ...' ,erros[x]); 
+    final[x] = unidos[x].split("...")
   };
 
+
+  const jsonFinal = final.map(item => JSON.parse(JSON.stringify(item)))
+
+  return [jsonFinal];
+
+}
+class App extends Component {
   render() {
     const text = "Meu texto está erado\nSegundo palagrafo";
     const mistakes = [
+      
       {
         start: 15,
         end: 20,
@@ -25,21 +44,14 @@ class App extends Component {
       }
     ];
 
-    // ========================================================================
-    // Sua tarefa é implementar a função que converte as variáveis `text` e
-    // `mistakes` na variável `textWithMistakes`, para textos e erros
-    // arbitrários. Você deve fazer isso na função
-    // `makeTextWithMistakes(text, mistakes)` usando outras funções de ajuda se
-    // achar necessário
-    // ========================================================================
-
-    const textWithMistakes = [
-      ["Meu texto está ", <em>erado</em>],
-      ["Segundo ", <em>palagrafo</em>]
-    ];
-
+    const errorqt = mistakes.length;
+    
+    const [errors] = makeTextWithMistakes(text, mistakes); 
     return (
-      <div className="App">{textWithMistakes.map(this.renderParagraph)}</div>
+      <div>
+       {errors.map((item, key) => <Item key={key} correto={item[0]} errado={item[1]}/>)}
+       <div>{errorqt}</div>
+      </div>
     );
   }
 }
