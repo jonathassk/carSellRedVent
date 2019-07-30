@@ -4,7 +4,12 @@ class Item extends Component {
 
 
 	render(){
-		return(<div><h1>{this.props.correto}</h1><h2>{this.props.errado}</h2></div>);
+		return(
+			<div className="linha">
+				<p >{this.props.rigth} </p>
+				<p className="wrong">{this.props.wrong}</p>
+			</div>
+		);	
 	}
 }
 

@@ -1,9 +1,990 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testando component Rendenização deve ser feita 1`] = `
+exports[`testando componentes Rendenização component app 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <div
+          className="header"
+>
+          <p
+                    className="headerP"
+          >
+                    bem vindo 
+                    
+          </p>
+</div>,
+        <div
+          id="center"
+>
+          <div
+                    id="nome"
+          >
+                    <p>
+                              digite seu nome aqui
+                    </p>
+                    <input
+                              id="nameState"
+                              type="text"
+                    />
+                    <button
+                              onClick={[Function]}
+                              type="submit"
+                    >
+                              submit
+                    </button>
+          </div>
+</div>,
+        <div
+          className="divPrincipal"
+>
+          <div>
+                    <Item
+                              rigth="Meu texto está "
+                              wrong="erado"
+                    />
+                    <br />
+          </div>
+          <div>
+                    <Item
+                              rigth="Segundo "
+                              wrong="palagrafo"
+                    />
+                    <br />
+          </div>
+          <div>
+                    <Item
+                              rigth=""
+                              wrong=""
+                    />
+                    <br />
+          </div>
+          <center>
+                    <div
+                              className="qtDiv"
+                    >
+                              <p
+                                        className="qtP"
+                              >
+                                        você errou apenas 
+                                        <em>
+                                                   
+                                                  2
+                                                   
+                                        </em>
+                                         vezes, parabens, continue assim!!
+                              </p>
+                    </div>
+          </center>
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <p
+            className="headerP"
+>
+            bem vindo 
+            
+</p>,
+          "className": "header",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "bem vindo ",
+              "",
+            ],
+            "className": "headerP",
+          },
+          "ref": null,
+          "rendered": Array [
+            "bem vindo ",
+            "",
+          ],
+          "type": "p",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            id="nome"
+>
+            <p>
+                        digite seu nome aqui
+            </p>
+            <input
+                        id="nameState"
+                        type="text"
+            />
+            <button
+                        onClick={[Function]}
+                        type="submit"
+            >
+                        submit
+            </button>
+</div>,
+          "id": "center",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                digite seu nome aqui
+</p>,
+              <input
+                id="nameState"
+                type="text"
+/>,
+              <button
+                onClick={[Function]}
+                type="submit"
+>
+                submit
+</button>,
+            ],
+            "id": "nome",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "digite seu nome aqui",
+              },
+              "ref": null,
+              "rendered": "digite seu nome aqui",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "id": "nameState",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "submit",
+                "onClick": [Function],
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": "submit",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Array [
+              <div>
+                <Item
+                                rigth="Meu texto está "
+                                wrong="erado"
+                />
+                <br />
+</div>,
+              <div>
+                <Item
+                                rigth="Segundo "
+                                wrong="palagrafo"
+                />
+                <br />
+</div>,
+              <div>
+                <Item
+                                rigth=""
+                                wrong=""
+                />
+                <br />
+</div>,
+            ],
+            <center>
+              <div
+                            className="qtDiv"
+              >
+                            <p
+                                          className="qtP"
+                            >
+                                          você errou apenas 
+                                          <em>
+                                                         
+                                                        2
+                                                         
+                                          </em>
+                                           vezes, parabens, continue assim!!
+                            </p>
+              </div>
+</center>,
+          ],
+          "className": "divPrincipal",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Item
+                  rigth="Meu texto está "
+                  wrong="erado"
+/>,
+                <br />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "rigth": "Meu texto está ",
+                  "wrong": "erado",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Item
+                  rigth="Segundo "
+                  wrong="palagrafo"
+/>,
+                <br />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "rigth": "Segundo ",
+                  "wrong": "palagrafo",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Item
+                  rigth=""
+                  wrong=""
+/>,
+                <br />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "class",
+                "props": Object {
+                  "rigth": "",
+                  "wrong": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="qtDiv"
+>
+                <p
+                                className="qtP"
+                >
+                                você errou apenas 
+                                <em>
+                                                 
+                                                2
+                                                 
+                                </em>
+                                 vezes, parabens, continue assim!!
+                </p>
+</div>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <p
+                  className="qtP"
+>
+                  você errou apenas 
+                  <em>
+                                     
+                                    2
+                                     
+                  </em>
+                   vezes, parabens, continue assim!!
+</p>,
+                "className": "qtDiv",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "você errou apenas ",
+                    <em>
+                       
+                      2
+                       
+</em>,
+                    " vezes, parabens, continue assim!!",
+                  ],
+                  "className": "qtP",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "você errou apenas ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        2,
+                        " ",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      2,
+                      " ",
+                    ],
+                    "type": "em",
+                  },
+                  " vezes, parabens, continue assim!!",
+                ],
+                "type": "p",
+              },
+              "type": "div",
+            },
+            "type": "center",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="header"
+>
+            <p
+                        className="headerP"
+            >
+                        bem vindo 
+                        
+            </p>
+</div>,
+          <div
+            id="center"
+>
+            <div
+                        id="nome"
+            >
+                        <p>
+                                    digite seu nome aqui
+                        </p>
+                        <input
+                                    id="nameState"
+                                    type="text"
+                        />
+                        <button
+                                    onClick={[Function]}
+                                    type="submit"
+                        >
+                                    submit
+                        </button>
+            </div>
+</div>,
+          <div
+            className="divPrincipal"
+>
+            <div>
+                        <Item
+                                    rigth="Meu texto está "
+                                    wrong="erado"
+                        />
+                        <br />
+            </div>
+            <div>
+                        <Item
+                                    rigth="Segundo "
+                                    wrong="palagrafo"
+                        />
+                        <br />
+            </div>
+            <div>
+                        <Item
+                                    rigth=""
+                                    wrong=""
+                        />
+                        <br />
+            </div>
+            <center>
+                        <div
+                                    className="qtDiv"
+                        >
+                                    <p
+                                                className="qtP"
+                                    >
+                                                você errou apenas 
+                                                <em>
+                                                             
+                                                            2
+                                                             
+                                                </em>
+                                                 vezes, parabens, continue assim!!
+                                    </p>
+                        </div>
+            </center>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <p
+              className="headerP"
+>
+              bem vindo 
+              
+</p>,
+            "className": "header",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "bem vindo ",
+                "",
+              ],
+              "className": "headerP",
+            },
+            "ref": null,
+            "rendered": Array [
+              "bem vindo ",
+              "",
+            ],
+            "type": "p",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              id="nome"
+>
+              <p>
+                            digite seu nome aqui
+              </p>
+              <input
+                            id="nameState"
+                            type="text"
+              />
+              <button
+                            onClick={[Function]}
+                            type="submit"
+              >
+                            submit
+              </button>
+</div>,
+            "id": "center",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  digite seu nome aqui
+</p>,
+                <input
+                  id="nameState"
+                  type="text"
+/>,
+                <button
+                  onClick={[Function]}
+                  type="submit"
+>
+                  submit
+</button>,
+              ],
+              "id": "nome",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "digite seu nome aqui",
+                },
+                "ref": null,
+                "rendered": "digite seu nome aqui",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "id": "nameState",
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "submit",
+                  "onClick": [Function],
+                  "type": "submit",
+                },
+                "ref": null,
+                "rendered": "submit",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              Array [
+                <div>
+                  <Item
+                                    rigth="Meu texto está "
+                                    wrong="erado"
+                  />
+                  <br />
+</div>,
+                <div>
+                  <Item
+                                    rigth="Segundo "
+                                    wrong="palagrafo"
+                  />
+                  <br />
+</div>,
+                <div>
+                  <Item
+                                    rigth=""
+                                    wrong=""
+                  />
+                  <br />
+</div>,
+              ],
+              <center>
+                <div
+                                className="qtDiv"
+                >
+                                <p
+                                                className="qtP"
+                                >
+                                                você errou apenas 
+                                                <em>
+                                                                 
+                                                                2
+                                                                 
+                                                </em>
+                                                 vezes, parabens, continue assim!!
+                                </p>
+                </div>
+</center>,
+            ],
+            "className": "divPrincipal",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Item
+                    rigth="Meu texto está "
+                    wrong="erado"
+/>,
+                  <br />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "rigth": "Meu texto está ",
+                    "wrong": "erado",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Item
+                    rigth="Segundo "
+                    wrong="palagrafo"
+/>,
+                  <br />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "class",
+                  "props": Object {
+                    "rigth": "Segundo ",
+                    "wrong": "palagrafo",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Item
+                    rigth=""
+                    wrong=""
+/>,
+                  <br />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "2",
+                  "nodeType": "class",
+                  "props": Object {
+                    "rigth": "",
+                    "wrong": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="qtDiv"
+>
+                  <p
+                                    className="qtP"
+                  >
+                                    você errou apenas 
+                                    <em>
+                                                       
+                                                      2
+                                                       
+                                    </em>
+                                     vezes, parabens, continue assim!!
+                  </p>
+</div>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <p
+                    className="qtP"
+>
+                    você errou apenas 
+                    <em>
+                                         
+                                        2
+                                         
+                    </em>
+                     vezes, parabens, continue assim!!
+</p>,
+                  "className": "qtDiv",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "você errou apenas ",
+                      <em>
+                         
+                        2
+                         
+</em>,
+                      " vezes, parabens, continue assim!!",
+                    ],
+                    "className": "qtP",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "você errou apenas ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          " ",
+                          2,
+                          " ",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        " ",
+                        2,
+                        " ",
+                      ],
+                      "type": "em",
+                    },
+                    " vezes, parabens, continue assim!!",
+                  ],
+                  "type": "p",
+                },
+                "type": "div",
+              },
+              "type": "center",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`testando componentes Rendenização component item com erros 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Item />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -20,39 +1001,47 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <p>
-          Meu texto está erado
+           
 </p>,
-        <p>
-          Segundo palagrafo
-</p>,
+        <p
+          className="wrong"
+/>,
       ],
+      "className": "linha",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "0",
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Meu texto está erado",
+          "children": Array [
+            undefined,
+            " ",
+          ],
         },
         "ref": null,
-        "rendered": "Meu texto está erado",
+        "rendered": Array [
+          undefined,
+          " ",
+        ],
         "type": "p",
       },
       Object {
         "instance": null,
-        "key": "1",
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Segundo palagrafo",
+          "children": undefined,
+          "className": "wrong",
         },
         "ref": null,
-        "rendered": "Segundo palagrafo",
+        "rendered": null,
         "type": "p",
       },
     ],
-    "type": "h1",
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -62,39 +1051,162 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <p>
-            Meu texto está erado
+             
 </p>,
-          <p>
-            Segundo palagrafo
-</p>,
+          <p
+            className="wrong"
+/>,
+        ],
+        "className": "linha",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "wrong",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`testando componentes Rendenização component item sem erros 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <noError />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1 />,
+        <br />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1 />,
+          <br />,
         ],
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "0",
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Meu texto está erado",
+            "children": undefined,
           },
           "ref": null,
-          "rendered": "Meu texto está erado",
-          "type": "p",
+          "rendered": null,
+          "type": "h1",
         },
         Object {
           "instance": null,
-          "key": "1",
+          "key": undefined,
           "nodeType": "host",
-          "props": Object {
-            "children": "Segundo palagrafo",
-          },
+          "props": Object {},
           "ref": null,
-          "rendered": "Segundo palagrafo",
-          "type": "p",
+          "rendered": null,
+          "type": "br",
         },
       ],
-      "type": "h1",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

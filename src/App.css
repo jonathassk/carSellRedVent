@@ -1,3 +1,127 @@
-.App {
-  padding: 20px;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+div{
+	display: inline;
+}
+body{
+	background-color: #dcdcdc;
+}
+p{
+	font-family: 'Darker Grotesque', sans-serif;
+	font-size: 30px;
+	display: inline;
+}
+.wrong{
+	text-decoration: underline rgba(255,0,0,0.7);
+	opacity: 0.8;
+}
+.wrong:hover{
+	opacity: 1;
+}
+.linha{
+	position: relative;
+	display: block;
+	height: 9px; 
+	border-bottom: 1px solid rgba(0,0,255,0.3);
+	width: 90%;
+	margin-left: 5%;
+	
+	padding-bottom: 25px;
+}
+.header{
+	margin-bottom: 20px;
+	align-self: center;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+}
+.headerP{
+	font-family: 'Roboto', sans-serif;
+}
+.qtDiv{
+	display: flex;
+	margin-top: 20px;
+	width: 200px;
+	background-image: -webkit-linear-gradient(285deg, #13547a 0%, #80d0c7 100%);
+	background-image: -o-linear-gradient(285deg, #13547a 0%, #80d0c7 100%);
+	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	background-color: #f5f7fa;
+	border-radius: 5px;
+	color: rgba(255,255,255,0.7);
+	align-content: center;
+	padding: 30px;
+}
+.qtP{
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	display: inline;
+}
+em{
+	color: green;
+	opacity: 0.8;
+	border: 1px solid black;
+	border-radius: 100%;
+	position: relative;
+	margin: 5px;
+	padding: 2px;
+}
+#nome{
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	z-index: 999;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+	width: 40%;
+	height: 60%;
+	padding: 30px;
+	color: white;
+	border-radius: 5px;
+}
+#nome input{
+	display: block;
+	width: 90%;
+	height: 40px;
+	font-size: 35px;
+	color: #dcdcdc;
+}
+#nome p{ 
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+#center{
+	display: flex;
+	position: fixed;
+	top: -60px;
+	justify-content: center;
+	align-content: center;
+	height: 150%;
+	width: 100%;
+	z-index: 999;
+	background-color: black;
+}
+button{
+	background-image: -webkit-linear-gradient(285deg, #13547a 0%, #80d0c7 100%);
+	background-image: -o-linear-gradient(285deg, #13547a 0%, #80d0c7 100%);
+	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	background-color: #13547a;
+	border: 0px;
+	padding: 20px;
+	color: white;
+	box-shadow: 4px 6px 30px 2px rgba(0,0,0,0.3);
+	margin-top: 30px;
+	opacity: 0.6;
+}
+button:hover{
+	opacity: 1;
 }
