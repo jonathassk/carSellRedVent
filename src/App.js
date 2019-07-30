@@ -79,16 +79,16 @@ class App extends Component {
    render() {
       const text = "Meu texto está erado\nSegundo palagrafo\n";
       const mistakes = [
-      {
-         start: 15,
-         end: 20,
-         paragraph: 0
-      },
-      {
-         start: 8,
-         end: 17,
-         paragraph: 1
-      }      
+      // {
+      //    start: 15,
+      //    end: 20,
+      //    paragraph: 0
+      // },
+      // {
+      //    start: 8,
+      //    end: 17,
+      //    paragraph: 1
+      // }      
       ];
 
       const [result] = makeTextWithMistakes(text, mistakes);

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class noError extends Component{
 	render(){
 		return(
-			<div>
+			<div className="linha">
 			<h1>{this.props.correto}</h1><br />
 			</div>
 		);
