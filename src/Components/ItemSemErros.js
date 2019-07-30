@@ -4,7 +4,7 @@ class noError extends Component{
 	render(){
 		return(
 			<div className="linha">
-			<h1>{this.props.correto}</h1><br />
+				<p>{this.props.correto}</p><br />
 			</div>
 		);
 	}
