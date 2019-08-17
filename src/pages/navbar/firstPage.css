@@ -1,0 +1,146 @@
+@media only screen and (max-width: 520px){
+	.bodyContainer{
+		width: 400px;
+	}
+	.buildYour{
+		font-size: 20px;
+		left: 30px;
+		top: 30px;
+	}
+	.CarName{
+		font-size: 100px;
+		top: 30px;
+		left: 20px;
+		position: relative;
+	}
+	.car{
+		width: 400px;
+		top: -40px;
+		left: -20px;
+	}
+	.begin{
+		top: -80px;
+	}
+	.arrow{
+		top: -117px;
+		left: 235px;
+	}
+}
+@media only screen and (min-width: 521px) and (max-width: 600px){
+	.car{
+		left: -50px;
+		width: 500px;
+		top: -95px;
+	}
+	.CarName{
+		font-size: 125px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.buildYour{
+		font-size: 28px;
+		left: 5px;
+	}
+	.bodyContainer{
+		width: 80%;
+	}
+	.begin{
+		top: -140px;
+	}
+	.arrow{
+		top: -177px;
+		left: 270px;
+	}
+}
+@media only screen and (min-width: 601px) and (max-width: 1023px){
+	.bodyContainer{
+		width: 600px;
+	}
+	.car{
+		left: 150px;
+		width: 80%;
+		top: -95px;
+	}
+	.CarName{
+		font-size: 130px;
+	}
+	.buildYour{
+		font-size: 30px;
+		left: 10px;
+	}
+	.begin{
+		top: -140px;
+	}
+	.arrow{
+		top: -178px;
+		left: 340px;
+	}
+}
+@media only screen and (min-width: 1024px){
+	.buildYour{
+		font-size: 30px;
+		left: 110px;	
+	}
+	.CarName{
+		font-size: 150px;
+		left: 100px;
+		position: relative;
+	}
+	.car{
+		top: -110px;
+		left: 240px;
+		width: 600px;
+	}
+	.bodyContainer{
+		width: 1000px;
+	}
+	.begin{
+		top: -140px;
+	}
+	.arrow{
+		top: -178px;
+		left: 541px;
+	}
+}
+.buildYour{
+	position: relative;
+	color: #ab1725;	
+	letter-spacing: 4px;
+	margin-bottom: -40px;
+
+}
+.CarName{
+	display: inline;
+}
+.red{
+	color: #AB1725;
+}
+p{
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+.bodyContainer{
+	margin: 0 auto;
+	height: 450px;
+}
+.car{
+	position: relative;
+}
+.begin{
+	color: #000000;
+	position: relative;
+	text-align: center;
+	letter-spacing: 8px;
+	-webkit-transition: color 300ms ease-out;
+ 	-moz-transition: color 300ms ease-out;
+  	-o-transition: color 300ms ease-out;
+ 	transition: color 300ms ease-out;
+}
+.begin:hover{
+	color: #AB1725;
+}
+.arrow{
+	position: relative;
+}

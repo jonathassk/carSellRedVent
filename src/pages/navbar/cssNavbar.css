@@ -1,0 +1,59 @@
+@media only screen and (max-width: 520px){
+  .containernavPrincipal{
+      padding-top: 0px;
+  }
+}
+@media only screen and (min-width: 521px){
+  .containernavPrincipal{
+      padding-top: 20px;
+  }
+}
+.ContainerNav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 1230px;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.options{
+	display: flex;
+	flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  -webkit-overflow-scrolling: touch;
+}
+
+button{
+	background-color: rgba(0,0,0,0);
+	border: 0px;
+}
+.logo,.options{
+	flex-grow: 1;
+}
+.buttontext{
+  color: #a8a8a8;
+  -webkit-transition: color 300ms ease-out;
+  -moz-transition: color 300ms ease-out;
+  -o-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+
+}
+.buttontext:hover{
+  color: #000000;
+  cursor: pointer;
+}
+.buttontextSelected{
+
+  border-bottom: 2px solid #AB1725;
+}
+.buttontextSelected:hover{
+  cursor: pointer;
+}
+.containernavPrincipal{
+  display: flex;
+  justify-content: center;
+  
+}

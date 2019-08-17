@@ -1,0 +1,96 @@
+@media only screen and (max-width: 676px){
+	.enginePrincipal{
+		height: 40vh;
+	}
+
+	.imgCar{
+		transform: rotate(90deg);
+		top: -120px;
+		height: 60%;
+	}
+	.engineData{
+		position: relative;
+		top: -500px;
+		height: 35%;
+	}
+	.titleEngine{
+	font-size: 30px;
+	margin: 0px;
+	position: absolute;
+	top: -190px;
+	left: 40px;
+	}
+}
+
+@media only screen and (min-width: 677px){
+	.enginePrincipal{
+		height: 450px;
+	}
+	.enginePhoto{
+		height: 100%;
+	}
+	.imgCar{
+		height: 100%;
+		top: 0px;
+	}
+	.titleEngine{
+	font-size: 30px;
+	position: all;
+	left: 50%;
+	margin: 0px;
+	}
+}
+
+
+
+.enginePrincipal{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.imgCar{
+	position: relative;
+	margin: 0 auto;
+}
+.enginePhoto{
+	flex-grow: 1;
+	flex-basis: 50%;
+	display: flex;
+}
+.engineData{
+	flex-grow: 1;
+	flex-basis: 50%;
+}
+.engineOption{
+	background-color: #F7F9FA;
+	padding: 10px 20px;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	height: 70px;
+	min-width: 250px;
+}
+.engineOptionText{
+	display: inline;	
+	font-size: 30px;
+}
+.inline{
+	display: inline;	
+}
+.engineData{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.circleButton{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: red;
+}
+.enginekwh{
+	font-weight: bold;
+}

@@ -1,0 +1,26 @@
+.colorDiv{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.colorPhotoDiv{
+	flex-basis: 50%;
+	flex-grow: 1;
+}
+.colorinfoDiv{
+	flex-basis: 50%;
+	flex-grow: 1;
+}
+.ColorTitle{
+	font-size: 30px;
+}
+.colorText{
+	width: 70%;
+	color: #A8A8A8;
+}
+.optionsColorDiv{
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+}
