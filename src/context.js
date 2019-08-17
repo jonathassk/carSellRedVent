@@ -20,6 +20,7 @@ export default class Container extends Component {
       page: 0,
       engineType: 'P',
       photo: photo1,
+      restart: () => this.restart,
       colorValue: 0,
       photoColor: photo4,
       engine: [],
@@ -33,6 +34,14 @@ export default class Container extends Component {
       changeWheels: (wheels) => this.changeWheels(wheels),
     }
   } 
+
+  restart(){
+    this.setState({
+      page: 0,
+      price: this.state.SP,
+      currentPrice: 0,
+    })
+  }
 
   changeValueEngine(types){
     if(types === "P") {

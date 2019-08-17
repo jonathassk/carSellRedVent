@@ -1,0 +1,18 @@
+.finalDiv{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
+.categoriesFinal{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.infoFinal{
+	width: 30%;
+}
+.finalTitle{
+	width: 20px;
+}
