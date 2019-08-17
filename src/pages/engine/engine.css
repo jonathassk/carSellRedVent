@@ -41,7 +41,9 @@
 	}
 }
 
-
+.opacityengine{
+	opacity: 0.5;
+}
 
 .enginePrincipal{
 	display: flex;

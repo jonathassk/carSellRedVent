@@ -37,11 +37,12 @@ function Footer2() {
 	const Context = useContext(MyContext);
 	return(
 		
-		<div className="footer">
-			<p>{Context.price}</p>
+		<div className="footer footer2">
+			<p className="red">$ {Context.price}</p>
 			<p className="invisible">Model R</p>
 			<p className="invisible">{Context.engineChosed}</p>
-			<img src={Context.photoColor} className="photoFooter"/>
+			<img src={Context.photoColor} className="photoFooter invisible"/>
+			<img src={Context.wheelPhoto} className="photoFooter invisible" />
 			<p onClick={Context.changePage}>next</p>
 		</div>
 		

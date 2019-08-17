@@ -12,7 +12,8 @@ export default function color(){
 		<div className="colorDiv">
 			<div className="colorPhotoDiv">
 				<img src={Context.photoColor} />
-				<p>{Context.colorChosed}</p>
+				<p className="ColorType">{Context.colorChosed}</p>
+				<p className="ColorType valueColor red">+$ {Context.colorValue}</p>
 			</div>
 			<div className="colorinfoDiv">
 				<p className="ColorTitle">Color</p>
@@ -25,4 +26,4 @@ export default function color(){
 			</div>
 		</div>
 	);
-}
+} 
