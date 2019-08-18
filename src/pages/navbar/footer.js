@@ -36,15 +36,16 @@ function Footer1 (){
 function Footer2() { 
 	const Context = useContext(MyContext);
 	return(
-		
-		<div className="footer footer2">
-			<p className="red">$ {Context.price}</p>
-			<p className="invisible">Model R</p>
-			<p className="invisible">{Context.engineChosed}</p>
-			<img src={Context.photoColor} className="photoFooter invisible"/>
-			<img src={Context.wheelPhoto} className="photoFooter invisible" />
-			<p onClick={Context.changePage}>next</p>
+		<div className="footer footer2 verticalCenter">
+		<div className="footerPrice">
+			<p className="totalPrice nopadding nomargin greydark">total</p>
+			<p className="red nopadding nomargin valorFooter">$ {Context.price}</p>
 		</div>
-		
+			<p className="invisible greydark">Model R</p>
+			<p className="invisible greydark">{Context.engineChosed}</p>
+			<img src={Context.photoColor} className="photoFooter greydark invisible carFooter"/>
+			<img src={Context.wheelPhoto} className="photoFooter greydark invisible" />
+			<p onClick={Context.changePage} className="nextButton greydark">next</p>
+		</div>		
 	);
 }

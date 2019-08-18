@@ -9,17 +9,13 @@
   height: 100vh;
   }
 }
-
+li{
+  list-style-type: none;
+}
 p{
   font-family: 'Saira Condensed', sans-serif;
 }
-#containerNav{
-  display: flex;
-    
-  justify-content: center;
-  margin: 0px auto;
-  padding-top: 40px;
-}
+
 button{
   outline: none;
 }
@@ -28,6 +24,23 @@ body{
   -webkit-font-smoothing: antialiased;
   margin: 0px;
   padding: 0px; 
+  overflow: hidden;
+  position: relative;
+}
+html{
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+}
+hr{
+  opacity: 0.3;
+}
+#containerNav{
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  padding-top: 40px;
 }
 .Container{
   display: flex;
@@ -40,8 +53,19 @@ body{
 .containerBody{
   height: 450px;
 }
-a{
-  text-decoration: none;
+
+.nopadding{
+  padding: 0px;
 }
-
-
+.nomargin{
+  margin: 0px;
+}
+.greydark{
+  color: #0F1C2D;
+}
+.greymedium{
+  color: #3e4856;
+}
+.verticalCenter{
+  align-items: center;
+}

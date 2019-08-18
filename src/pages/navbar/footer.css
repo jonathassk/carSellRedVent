@@ -44,3 +44,11 @@
 .footer2{
 	box-shadow: -6px -4px 20px 3px rgba(0,0,0,0.1);
 }
+.nextButton{
+	font-size: 15px;
+}
+.valorFooter{
+	font-size: 25px;
+	letter-spacing: 0.099em;
+	line-height: 12px;
+}

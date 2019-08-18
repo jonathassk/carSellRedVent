@@ -11,6 +11,7 @@ import photo9 from './images/9.png';
 import final4 from './images/final-4.png';
 import final5 from './images/final-5.png';
 import final6 from './images/final-6.png';
+
 export const MyContext = React.createContext();
 
 export default class Container extends Component {  
@@ -20,7 +21,6 @@ export default class Container extends Component {
       page: 0,
       engineType: 'P',
       photo: photo1,
-      restart: () => this.restart,
       colorValue: 0,
       photoColor: photo4,
       engine: [],
@@ -28,10 +28,13 @@ export default class Container extends Component {
       engineChosed: '',
       colorChosed: '',
       wheelChoser: photo7,
+      photoFinal: final4,
       changePage: () => this.setState(actualPage => ({page: actualPage.page + 1, currentPrice: this.state.price})),
       testeclick: (types) => this.changeValueEngine(types),
       changeColor: (color) => this.changeColor(color),
       changeWheels: (wheels) => this.changeWheels(wheels),
+      restart: () => this.restart,
+
     }
   } 
 

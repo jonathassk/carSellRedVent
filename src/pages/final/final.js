@@ -7,28 +7,32 @@ function final(){
 
 	return(
 		<div className="finalDiv">
-			<div className="photoFinal"><img src={Context.photoFinal} /></div>
+			<div>
+				<img className="photoFinal" src={Context.photoFinal} />
+			</div>
 			<div className="infoFinal">
 				<p className="inline finalTitle">your Model</p><p className="red inline finalTitle"> R</p>
 				<div className="categoriesFinal">
-					<p className="inline">Starting Price</p>
-					<p className="inline">{Context.SP}</p>
+					<p className="inline nomargin">Starting Price</p>
+					<p className="inline nomargin">{Context.SP}</p>
 				</div>
 				<hr />
 				<div className="categoriesFinal">
-				<div>
-					<p className="inline">{Context.engineChosed}</p> - <p className="inline">{Context.kwh}</p>
-					<p className="inline">{Context.miles} Miles Range</p>
-				</div>
-				<p className="red">+$ {Context.enginePrice}</p>
+					<p className="inline nomargin">{Context.engineChosed} - {Context.kwh} kwh - {Context.miles} Miles Range</p>
+					<p className="red nomargin">+$ {Context.enginePrice}</p>
 				</div>
 				<div className="categoriesFinal">
-					<p>{Context.colorChosed}</p>
-					<p className="red">+$ {Context.colorValue}</p>
+					<p className="nomargin">{Context.colorChosed}</p>
+					<p className="red nomargin">+$ {Context.colorValue}</p>
 				</div>
 				<div className="categoriesFinal">
-					<p>{Context.wheelChosed}</p>
-					<p className="red">+$ {Context.wheelValue}</p>
+					<p className="nomargin">{Context.wheelChosed}</p>
+					<p className="red nomargin">+$ {Context.wheelValue}</p>
+				</div>
+				<hr />
+				<div className="categoriesFinal">
+					<p className="nomargin pFinalValue">Final Price</p>
+					<p className="red nomargin pFinalValue">+$ {Context.price}</p>
 				</div>
 				<p onClick={() => Context.restart}>REBUILD</p>
 			</div>

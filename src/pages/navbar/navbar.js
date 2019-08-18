@@ -6,7 +6,7 @@ class Navbar extends Component{
 	render(){
 		return(
 			<div className="containernavPrincipal">
-				<div className="ContainerNav">
+				<nav className="ContainerNav">
 					<div className="logo">
 						<img src={Logo} alt="logo"/>
 					</div>
@@ -17,7 +17,7 @@ class Navbar extends Component{
 						<button><p className="buttontext">Model Charlie</p></button>
 						<button><p className="buttontext">Model Italy</p></button>					
 					</div>						
-				</div>
+				</nav>
 			</div>
 		);
 	}

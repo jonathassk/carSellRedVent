@@ -139,6 +139,7 @@ p{
  	transition: color 300ms ease-out;
 }
 .begin:hover{
+	cursor: pointer;
 	color: #AB1725;
 }
 .arrow{

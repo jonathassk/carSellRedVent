@@ -12,15 +12,15 @@ export default function App(){
        <Provider>
             <Fragment>
               <div className="Container">
-                <div className="containerNav">
+                <header className="containerNav">
                   <NavBar />
-                </div>
+                </header>
                 <div className="containerBody">
                  <Body />
                 </div>
-                <div>
+                <footer>
                   <Footer />
-                </div>
+                </footer>
                </div>
             </Fragment>
          </Provider>
