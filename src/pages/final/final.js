@@ -1,6 +1,7 @@
 import React from 'react';
 import './final.css'
 import {MyContext} from '../../context';
+import rebuildButton from '../../images/rebuild.svg';
 
 function final(){
 	const Context = React.useContext(MyContext);
@@ -34,7 +35,9 @@ function final(){
 					<p className="nomargin pFinalValue">Final Price</p>
 					<p className="red nomargin pFinalValue">+$ {Context.price}</p>
 				</div>
-				<p onClick={Context.restart}>REBUILD</p>
+				<div className="FinaldivRebuild">
+				<p className="inline centerText FinalrebuildButton" onClick={Context.restart}>REBUILD </p><img className="rebuildButton" src={rebuildButton} />
+				</div>
 			</div>
 		</div>
 	);

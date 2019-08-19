@@ -11,6 +11,13 @@ A parte de eslilização eu fiz com **CSS** puro, sem styled-components ou qualq
 
 Para fazer a responsividade eu utilizei **flexbox**, pelo mesmo motivo que o css, por acreditar ser a opção mais simples, e não utilizar ferramentas de terceiras como algum framework (bootstrap, Materialize etc...)
 
+## Info extras 
+
+talvez a responsividade não tenha ficado perfeita pois eu tinha apenas a tela do meu notebook (1376x786) para testar todas as versões usando o firefox, então não sei se alguma tela vai ficar desconfigurada ou com informações em tamanhos desproporcionais, mas espero que não tenha acontecido isso.
+Não fiz usando o metodo TDD por questão de tempo, mas normalmente utilizo esse processo nas minhas aplicações atuais para diminuir a chance de problemas.
+
+Link da aplicação no [HEROKU](https://redventurestest.herokuapp.com/)
+
 ## Agradecimentos
 
 Gostaria de agradecer a empresa pela oportunidade de concorrer a vaga, nesse tempo que estive codificando pude pesquisar sobre a empresa a nivel nacional e internacional, e hoje posso dizer que a vontade de fazer parte da equipe só aumentou com o tempo, espero ter a possibilidade de participar das proximas etapas e assim conseguir conquistar a vaga.

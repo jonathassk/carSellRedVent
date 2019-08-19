@@ -1,3 +1,7 @@
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 @media only screen and (min-width: 770px){
 	.finalDiv{
 		margin: 0px 5%;
@@ -48,4 +52,23 @@ top: 4vh;
 	width: 20px;
 	
 	font-size: 30px;
+}
+.centerText{
+	text-align: center;
+}
+.FinaldivRebuild{
+	display: flex;
+	justify-content: center;
+}
+.rebuildButton{
+	margin-left: 5px;	
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+.rebuildButton:hover{
+	cursor: pointer;
+}
+.FinalrebuildButton:hover{
+	cursor: pointer;
 }
