@@ -99,3 +99,6 @@
 .enginekwh{
 	font-weight: bold;
 }
+.engineOpacityBar{
+	opacity: 0.5;
+}

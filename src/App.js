@@ -1,16 +1,19 @@
 import React, { Fragment } from 'react';
 import Provider from './context'
 
-import NavBar from './pages/navbar/navbar';
+import NavBar from './pages/home/navbar';
 import Body from './pages/body';
-import Footer from './pages/navbar/footer';
+import FooterCompo from './pages/home/footer';
 import './App.css';
 
-export default function App(){
+export default class App extends React.Component{
 
+
+render(){
     return(
        <Provider>
             <Fragment>
+            
               <div className="Container">
                 <header className="containerNav">
                   <NavBar />
@@ -19,11 +22,11 @@ export default function App(){
                  <Body />
                 </div>
                 <footer>
-                  <Footer />
+                  <FooterCompo />
                 </footer>
                </div>
             </Fragment>
          </Provider>
-    );
+    );}
 }
 

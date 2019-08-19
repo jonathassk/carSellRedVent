@@ -19,119 +19,104 @@ export default class Container extends Component {
     super(props)
     this.state = {
       page: 0,
+      //engine
       engineType: 'P',
+      engineTypeID: 0,
       photo: photo1,
-      colorValue: 0,
+      enginePrice: 'included',
+      //color
       photoColor: photo4,
+      colorValue: 'included',
+      //wheel
+      wheelPhoto: photo7,
+      wheelValue: 'included',
+      //acima valores iniciais do produto escolhido
       engine: [],
-      enginePrice: 0,
-      engineChosed: '',
-      colorChosed: '',
-      wheelChoser: photo7,
       photoFinal: final4,
+      //funções
       changePage: () => this.setState(actualPage => ({page: actualPage.page + 1, currentPrice: this.state.price})),
       testeclick: (types) => this.changeValueEngine(types),
       changeColor: (color) => this.changeColor(color),
       changeWheels: (wheels) => this.changeWheels(wheels),
-      restart: () => this.restart,
-
+      restart: () => this.restart(),
     }
   } 
-
+//reiniciar processo de compra
   restart(){
     this.setState({
       page: 0,
       price: this.state.SP,
       currentPrice: 0,
+      photoColor: photo4,
+      wheelPhoto: photo7,
+      photo: photo1,
+      wheelValue: '$ included',
+      colorValue: '$ included',
+      enginePrice: '$ included',
     })
   }
 
-  changeValueEngine(types){
-    if(types === "P") {
-      this.setState({
-        enginePrice: this.state.engine[0].price,
-        miles: this.state.engine[0].range,
-        kwh: this.state.engine[0].kwh,
-        engineType: 'P',
-        price: this.state.currentPrice + this.state.engine[0].price,
-        engineChosed: this.state.engine[0].kwh + this.state.engine[0].type,
-        photo: photo1,
-      });
-    } else if(types === "S") {
-      this.setState({
-        engineType: 'S',
-        enginePrice: this.state.engine[0].price,
-        miles: this.state.engine[0].range,
-        price: this.state.currentPrice + this.state.engine[1].price, 
-        engineChosed: this.state.engine[1].kwh + this.state.engine[1].type,
-        photo: photo2,
-      });
-
+// mudança de motor
+  changeTypeEngine(types){
+    if(types === "P"){
+      this.setState({engineTypeID: 0, photo: photo1,})
+    } else if(types === "S"){
+      this.setState({engineTypeID: 1, photo: photo2,})
     } else {
-      this.setState({
-        engineType: 'B',
-        enginePrice: this.state.engine[0].price,
-        miles: this.state.engine[0].range,
-        price: this.state.currentPrice + this.state.engine[2].price,
-        engineChosed: this.state.engine[2].kwh + this.state.engine[2].type,
-        photo: photo3,
-      });
+      this.setState({engineTypeID: 2, photo: photo3,})
+    }
+  }
+  async changeValueEngine(types){
+    await this.changeTypeEngine(types); //definir state para fazer a modificação dos dados (função acima)
+    this.setState({
+      enginePrice: '+ $' + this.state.engine[this.state.engineTypeID].price,
+      miles: this.state.engine[this.state.engineTypeID].range,
+      kwh: this.state.engine[this.state.engineTypeID].kwh,
+      engineType: this.state.engine[this.state.engineTypeID].type,
+      price: this.state.currentPrice + this.state.engine[this.state.engineTypeID].price,
+      engineChosed: this.state.engine[this.state.engineTypeID].kwh + this.state.engine[this.state.engineTypeID].type,
+    });
+  }
+// mudança de cor
+  changeColorType(color){
+    if(color === "red"){
+      this.setState({colorTypeID: 0, photoColor: photo4, photoFinal: final4,})
+    } else if(color === "blue"){
+      this.setState({colorTypeID: 1, photoColor: photo5, photoFinal: final5,})
+    } else {
+      this.setState({colorTypeID: 2, photoColor: photo6, photoFinal: final6,})
     }
   }
 
-  changeColor(color){
-    if(color === 'red'){
-      this.setState({
-        colorValue: this.state.color[0].price,
-        colorChosed: this.state.color[0].label,
-        price: this.state.currentPrice + this.state.color[0].price,
-        photoColor: photo4,
-        photoFinal: final4,
-      })
-    } else if(color === 'blue'){
-      this.setState({
-        colorChosed: this.state.color[1].label,
-        colorValue: this.state.color[1].price,
-        price: this.state.currentPrice + this.state.color[1].price,
-        photoColor: photo5,
-        photoFinal: final5,
-      })
+  async changeColor(color){
+    await this.changeColorType(color);
+    this.setState({
+      colorValue: '+ $' + this.state.color[this.state.colorTypeID].price,
+      colorChosed: this.state.color[this.state.colorTypeID].label,
+      price: this.state.currentPrice + this.state.color[this.state.colorTypeID].price,
+    })
+  }
+// mudança de rodas
+  changeWheelType(wheelID){
+    if (wheelID === 7){
+      this.setState({wheelTypeID: 0, wheelPhoto: photo7,})
+    } else if (wheelID === 8){
+      this.setState({wheelTypeID: 1, wheelPhoto: photo8,})
     } else {
-      this.setState({
-        colorChosed: this.state.color[2].label,
-        colorValue: this.state.color[2].price,
-        price: this.state.currentPrice + this.state.color[2].price,
-        photoColor: photo6,
-        photoFinal: final6,
-      })
+      this.setState({wheelTypeID: 2, wheelPhoto: photo9,})
     }
   }
 
-  changeWheels(wheels){
-    if(wheels === 7){
-      this.setState({
-        wheelValue: this.state.wheels[0].price,
-        price: this.state.currentPrice + this.state.wheels[0].price,
-        wheelChosed: this.state.wheels[0].label,
-        wheelPhoto: photo7,
-      })
-    } else if (wheels === 8){
-      this.setState({
-        wheelValue: this.state.wheels[1].price,
-        price: this.state.currentPrice + this.state.wheels[1].price,
-        wheelChosed: this.state.wheels[1].label,
-        wheelPhoto: photo8,
-      })
-    } else {
-      this.setState({
-        wheelValue: this.state.wheels[2].price,
-        price: this.state.currentPrice + this.state.wheels[2].price,
-        wheelChosed: this.state.wheels[2].label,
-        wheelPhoto: photo9,
-      })
-    }
+  async changeWheels(wheelID){
+    await this.changeWheelType(wheelID);
+    this.setState({
+      wheelValue: '+ $' + this.state.wheels[this.state.wheelTypeID].price,
+      price: this.state.currentPrice + this.state.wheels[this.state.wheelTypeID].price,
+      wheelChosed: this.state.wheels[this.state.wheelTypeID].label,
+    })
   }
 
+// requisição de dados do API ao ter componente montado
   async componentDidMount(){  
     await fetch('https://next.json-generator.com/api/json/get/41ORKNZDU')
     .then(response => response.json())
@@ -151,7 +136,7 @@ export default class Container extends Component {
        wheelChosed: this.state.wheels[0].label,
     })
   }
-  
+// Provider do context API
   render() {
     return (
       <MyContext.Provider value={this.state}>

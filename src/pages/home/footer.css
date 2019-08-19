@@ -47,6 +47,9 @@
 .nextButton{
 	font-size: 15px;
 }
+.nextButton:hover{
+	cursor: pointer;
+}
 .valorFooter{
 	font-size: 25px;
 	letter-spacing: 0.099em;

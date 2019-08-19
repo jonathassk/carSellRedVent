@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {MyContext} from '../context';
-import FirstPage from './navbar/firstPage'
+import FirstPage from './home/firstPage'
 import Engine from './engine/engine';
 import Wheels from './wheels/wheels'
 import Color from './color/color';

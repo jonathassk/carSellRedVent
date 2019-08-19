@@ -7,7 +7,7 @@ export default function Footer (){
 	const Context = useContext(MyContext);
 
 	return(
-		<div>{Context && (Context.page === 0 ? <Footer1 /> : <Footer2 />) }</div>
+		<div>{Context && (Context.page > 3 ? '' : (Context.page === 0 ? <Footer1 /> : <Footer2 />)) }</div>
 	);
 }
 
@@ -43,8 +43,8 @@ function Footer2() {
 		</div>
 			<p className="invisible greydark">Model R</p>
 			<p className="invisible greydark">{Context.engineChosed}</p>
-			<img src={Context.photoColor} className="photoFooter greydark invisible carFooter"/>
-			<img src={Context.wheelPhoto} className="photoFooter greydark invisible" />
+			<img src={Context.photoColor} alt="car with selected color" className="photoFooter greydark invisible carFooter"/>
+			<img src={Context.wheelPhoto} alt="car with selected color" className="photoFooter greydark invisible" />
 			<p onClick={Context.changePage} className="nextButton greydark">next</p>
 		</div>		
 	);

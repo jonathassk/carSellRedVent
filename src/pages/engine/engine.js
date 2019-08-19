@@ -24,15 +24,21 @@ const Context = useContext(MyContext);
 
 class ItemPage extends Component{
 static contextType = MyContext;
-render(){
-		return(			
+constructor(props){
+	super(props);
+	this.state = ({
+		engineOpacityBar: '',
+	})
+}
 
-			<div className="engineOption">
- 				<div><p className="engineOptionText">{this.props.kwh}</p><p className="engineOptionText red">{this.props.type}</p></div>
- 				<div><p className="enginekwh inline">{this.props.kwh}</p><p className="inline"> kwh</p></div>
- 				<div><p className="enginekwh inline">{this.props.range}</p><p className="inline"> miles range</p></div>
- 				<button className="circleButton" onClick={() => this.context.testeclick(this.props.type)}></button>
-			</div>
+render(){
+	return(			
+		<div className={`engineOption`}>  
+			<div><p className="engineOptionText">{this.props.kwh}</p><p className="engineOptionText red">{this.props.type}</p></div>
+			<div><p className="enginekwh inline">{this.props.kwh}</p><p className="inline"> kwh</p></div>
+			<div><p className="enginekwh inline">{this.props.range}</p><p className="inline"> miles range</p></div>
+			<button className="circleButton" onClick={() => {this.context.testeclick(this.props.type); this.handleClick();}}></button>
+		</div>
 	);
 }
 }

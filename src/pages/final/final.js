@@ -8,7 +8,7 @@ function final(){
 	return(
 		<div className="finalDiv">
 			<div>
-				<img className="photoFinal" src={Context.photoFinal} />
+				<img className="photoFinal" src={Context.photoFinal} alt="car result page"/>
 			</div>
 			<div className="infoFinal">
 				<p className="inline finalTitle">your Model</p><p className="red inline finalTitle"> R</p>
@@ -19,22 +19,22 @@ function final(){
 				<hr />
 				<div className="categoriesFinal">
 					<p className="inline nomargin">{Context.engineChosed} - {Context.kwh} kwh - {Context.miles} Miles Range</p>
-					<p className="red nomargin">+$ {Context.enginePrice}</p>
+					<p className="red nomargin"> {Context.enginePrice}</p>
 				</div>
 				<div className="categoriesFinal">
 					<p className="nomargin">{Context.colorChosed}</p>
-					<p className="red nomargin">+$ {Context.colorValue}</p>
+					<p className="red nomargin"> {Context.colorValue}</p>
 				</div>
 				<div className="categoriesFinal">
 					<p className="nomargin">{Context.wheelChosed}</p>
-					<p className="red nomargin">+$ {Context.wheelValue}</p>
+					<p className="red nomargin"> {Context.wheelValue}</p>
 				</div>
 				<hr />
 				<div className="categoriesFinal">
 					<p className="nomargin pFinalValue">Final Price</p>
 					<p className="red nomargin pFinalValue">+$ {Context.price}</p>
 				</div>
-				<p onClick={() => Context.restart}>REBUILD</p>
+				<p onClick={Context.restart}>REBUILD</p>
 			</div>
 		</div>
 	);

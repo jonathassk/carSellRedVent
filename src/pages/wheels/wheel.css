@@ -1,11 +1,24 @@
+@media only screen and (max-width: 676px){
+	.wheelDiv{
+		overflow-x: scroll;
+	}
+	.centerwheel{
+		position: relative;
+		left: 60vw;
+	}
+}
+
 .wheelDiv{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: flex-end;
+
 }
 .centerwheel{
 	text-align: center;
-
+}
+.centerwheel:hover{
+	cursor: pointer;
 }
