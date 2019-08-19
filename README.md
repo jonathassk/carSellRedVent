@@ -11,6 +11,8 @@ A parte de eslilização eu fiz com **CSS** puro, sem styled-components ou qualq
 
 Para fazer a responsividade eu utilizei **flexbox**, pelo mesmo motivo que o css, por acreditar ser a opção mais simples, e não utilizar ferramentas de terceiras como algum framework (bootstrap, Materialize etc...)
 
+As components filhas estão no mesmo arquivo que os pais apenas para facilitar a visualização dos codigos, como não tera como explicar, mas normalmente eu faço cada componente em um arquivo separado.
+
 ## Info extras 
 
 talvez a responsividade não tenha ficado perfeita pois eu tinha apenas a tela do meu notebook (1376x786) para testar todas as versões usando o firefox, então não sei se alguma tela vai ficar desconfigurada ou com informações em tamanhos desproporcionais, mas espero que não tenha acontecido isso.

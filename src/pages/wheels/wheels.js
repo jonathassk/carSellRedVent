@@ -22,10 +22,6 @@ export default function wheels(){
 }
 
 class WheelOption extends Component{
-constructor(props){
-	super(props);
-	opacity: '';
-}
 
 static contextType = MyContext;
 	render(){

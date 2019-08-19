@@ -13,7 +13,7 @@ const Context = useContext(MyContext);
 				    </div>
 				    <div className="engineData">
 				    <p className="titleEngine">Engine</p>
-						{Context.engine.map(item => <ItemPage type={item.type} key={item.id} id={item.id} kwh={item.kwh} range={item.range}/>)}
+						{Context.engine.map((item, key) => <ItemPage type={item.type} key={item.id} id={item.id} kwh={item.kwh} range={item.range}/>)}
 				    </div>
 				 	</div>
 				}
@@ -31,10 +31,10 @@ constructor(props){
 	})
 }
 
+
 render(){
-	
 	return(			
-		<div className={`engineOption  ${this.state.engineOpacityBar} `}>  
+		<div className={'engineOption'}>  
 			<div><p className="engineOptionText">{this.props.kwh}</p><p className="engineOptionText red">{this.props.type}</p></div>
 			<div><p className="enginekwh inline">{this.props.kwh}</p><p className="inline"> kwh</p></div>
 			<div><p className="enginekwh inline">{this.props.range}</p><p className="inline"> miles range</p></div>

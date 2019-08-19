@@ -33,6 +33,9 @@ export default class Container extends Component {
       //acima valores iniciais do produto escolhido
       engine: [],
       photoFinal: final4,
+      //efeitos visuais
+      opcWheel2: 'opacity50',
+      opcWheel3: 'opacity50',
       //funções
       changePage: () => this.setState(actualPage => ({page: actualPage.page + 1, currentPrice: this.state.price})),
       testeclick: (types) => this.changeValueEngine(types),
