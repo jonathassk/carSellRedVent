@@ -12,9 +12,9 @@ export default function wheels(){
 		<div>
 			{!Context ? '' :
 			<div className="wheelDiv"> 
-				<WheelOption wheelOpt={Wheel1} alt={'wheel option 1'} id={0} />
-				<WheelOption wheelOpt={Wheel2} alt={'wheel option 2'} id={1} />
-				<WheelOption wheelOpt={Wheel3} alt={'wheel option 3'} id={2} />
+				<WheelOption wheelOpt={Wheel1} alt={'wheel option 1'} id={0} idDom="wheel1" opacityClass={Context.opcWheel1}/>
+				<WheelOption wheelOpt={Wheel2} alt={'wheel option 2'} id={1} idDom="wheel2" opacityClass={Context.opcWheel2}/>
+				<WheelOption wheelOpt={Wheel3} alt={'wheel option 3'} id={2} idDom="wheel3" opacityClass={Context.opcWheel3}/>
 			</div>
 			}
 		</div>
@@ -27,12 +27,10 @@ constructor(props){
 	opacity: '';
 }
 
-
-
 static contextType = MyContext;
 	render(){
 		return(
-			<div className="centerwheel">
+			<div className={"centerwheel "+ this.props.opacityClass} onClick={this.handleClick} id={this.props.idDom}>
 				<img src={this.props.wheelOpt} alt={this.props.alt} onClick={() => this.context.changeWheels(this.context.wheels[this.props.id].id)} />
 				<p className="">{this.context.wheels[this.props.id].label}</p>
 				<p className="red">+$ {this.context.wheels[this.props.id].price}</p>

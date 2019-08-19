@@ -99,11 +99,11 @@ export default class Container extends Component {
 // mudança de rodas
   changeWheelType(wheelID){
     if (wheelID === 7){
-      this.setState({wheelTypeID: 0, wheelPhoto: photo7,})
+      this.setState({wheelTypeID: 0, wheelPhoto: photo7, opcWheel1: 'opacity100', opcWheel2: 'opacity50', opcWheel3: 'opacity50'})
     } else if (wheelID === 8){
-      this.setState({wheelTypeID: 1, wheelPhoto: photo8,})
+      this.setState({wheelTypeID: 1, wheelPhoto: photo8, opcWheel1: 'opacity50', opcWheel2: 'opacity100', opcWheel3: 'opacity50'})
     } else {
-      this.setState({wheelTypeID: 2, wheelPhoto: photo9,})
+      this.setState({wheelTypeID: 2, wheelPhoto: photo9, opcWheel1: 'opacity50', opcWheel2: 'opacity50', opcWheel3: 'opacity100'})
     }
   }
 
@@ -115,6 +115,8 @@ export default class Container extends Component {
       wheelChosed: this.state.wheels[this.state.wheelTypeID].label,
     })
   }
+
+
 
 // requisição de dados do API ao ter componente montado
   async componentDidMount(){  
