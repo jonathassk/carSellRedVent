@@ -1,26 +1,36 @@
-# Teste tecnico vaga front-end redVentures
-## Projeto 
+# Plataforma venda de carros 
 
-O Projeto indicado pela red ventures consistia em fazer uma pagina de compra de um carro, fazendo a escolha de motor, cor e rodas e apresentar o valor final após as escolhas.
+## O que é
 
-## Escolhas de projeto 
+Projeto para teste tecnico em vaga de programador frontend, também utilizada como forma de aprendizado da utilização da contextAPI como biblioteca utilizada para fazer o gerenciamento de dados.
 
-Para fazer o projeto eu escolhi usar **Context API** para fazer a transmissão de objetos e metodos entre os componentes, acredito que em casos simples como esse, é uma opção melhor que o redux, por ser mais direto e necessitar menos código para fazer o básico da transmissão dos dados.
+## iniciar o projeto
 
-A parte de eslilização eu fiz com **CSS** puro, sem styled-components ou qualquer modulo, escolhi essa opção por não saber qual a opção preferida da empresa, então fiz pelo modo mais simples, pensei em utilizar BEM, para ter mais estruturado, porém fiquei em duvidas também sobre a posição da empresa sobre, então para ter uma organização basica, eu dividi em arquivos separados para facilitar o entendimento, além de ter colocado o nome dos componentes nos estilos para facilitar.
+Para iniciar o projeto em seu dispositivo você pode fazer o clone do repositorio para o seu computador e após isso utilizar o comando "npm i" dentro do diretorio da aplicação e ela ira fazer a instalação de todas as bibliotecas necessarias para a utilização correta.
+Antes de utilizar o comando npm i, tenha certeza de que o node esteja instalado em seu computador.
 
-Para fazer a responsividade eu utilizei **flexbox**, pelo mesmo motivo que o css, por acreditar ser a opção mais simples, e não utilizar ferramentas de terceiras como algum framework (bootstrap, Materialize etc...)
+## pré requisitos
 
-As components filhas estão no mesmo arquivo que os pais apenas para facilitar a visualização dos codigos, como não tera como explicar, mas normalmente eu faço cada componente em um arquivo separado.
+Para o funcionamento correto é necessario ter o node instalado em seu computador, também é recomendavel ter uma versão atual do react em seu computador para o funcionamento correto.
 
-## Info extras 
+## Testes
 
-talvez a responsividade não tenha ficado perfeita pois eu tinha apenas a tela do meu notebook (1376x786) para testar todas as versões usando o firefox, então não sei se alguma tela vai ficar desconfigurada ou com informações em tamanhos desproporcionais, mas espero que não tenha acontecido isso.
-Não fiz usando o metodo TDD por questão de tempo, mas normalmente utilizo esse processo nas minhas aplicações atuais para diminuir a chance de problemas.
+Essa aplicação não foi feita segundo o TDD, então não contem testes completos para garantir a boa performance e exclusão de todos os bugs em todas as açoes da aplicação, mas é possivel fazer testes pelo jest que ja se encontra instalado, alem de ter alguns teste ja escritos no codigo.
 
-Link da aplicação no [HEROKU](https://redventurestest.herokuapp.com/)
+## Criado com
 
-## Agradecimentos
+ContextAPI - 
+React
+Jest
 
-Gostaria de agradecer a empresa pela oportunidade de concorrer a vaga, nesse tempo que estive codificando pude pesquisar sobre a empresa a nivel nacional e internacional, e hoje posso dizer que a vontade de fazer parte da equipe só aumentou com o tempo, espero ter a possibilidade de participar das proximas etapas e assim conseguir conquistar a vaga.
+## Autor 
 
+Esse codigo foi criado por Jonathas de Sales 
+
+## Licensa
+
+This project is licensed under the MIT License - see the [https://gist.github.com/PurpleBooth/LICENSE.md](LICENSE.md) file for details
+
+## Uso online
+
+Para testar a aplicação, acesse o [HEROKU](https://redventurestest.herokuapp.com/)
