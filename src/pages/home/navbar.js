@@ -8,7 +8,6 @@ class Navbar extends Component{
 			<div className="containernavPrincipal">
 				<nav className="ContainerNav">
 					<div className="logo">
-						<img src={Logo} alt="logo"/>
 					</div>
 					<div className="options">
 						<button><p className="buttontextSelected">Model R</p></button>
