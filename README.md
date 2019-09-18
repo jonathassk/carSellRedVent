@@ -27,10 +27,6 @@ Jest
 
 Esse codigo foi criado por Jonathas de Sales 
 
-## Licensa
-
-This project is licensed under the MIT License - see the [https://gist.github.com/PurpleBooth/LICENSE.md](LICENSE.md) file for details
-
 ## Uso online
 
 Para testar a aplicação, acesse o [HEROKU](https://redventurestest.herokuapp.com/)
